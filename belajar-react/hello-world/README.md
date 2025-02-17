@@ -9,7 +9,7 @@ Cek Instalasi: Buka VS Code → Help → About
 Node.js: Runtime JavaScript untuk menjalankan kode di luar browser.
 Cek Instalasi: Jalankan di CMD/PowerShell → node -v dan npm -v
 
- ![Image Alt]([image_url](https://github.com/EntFladda/Pemrograman-Berbasis-Framework/blob/belajar-react/belajar-react/hello-world/Praktikum%201.png?raw=true))
+ ![Image Alt](https://github.com/EntFladda/Pemrograman-Berbasis-Framework/blob/a02d813948e81dd11c465c9ee5e119360f1dd2e6/belajar-react/hello-world/Praktikum%201.png)
 
 Soal Praktikum 2
 1. Penjelasan Istilah dalam Next.js
