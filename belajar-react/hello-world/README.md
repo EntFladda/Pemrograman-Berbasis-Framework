@@ -46,7 +46,9 @@ const user = {
   imageSize: 90
 };
 Contoh Penggunaan:
-"<img src={user.imageUrl} alt="User Image" />"
+<img 
+ "src={user.imageUrl}" 
+ "alt="User Image"" />
 Mengambil nilai imageUrl dari user agar gambar tampil.
 
 ![Image Alt](https://github.com/EntFladda/Pemrograman-Berbasis-Framework/blob/belajar-react/belajar-react/hello-world/Screenshot%202025-02-17%20151442.png?raw=true)
