@@ -1,23 +1,42 @@
-import logo from './logo.svg';
 import './App.css';
+import './Counter';
+import './Greeting';
+import Counter from './Counter';
+import Greeting from './Greeting';
+
+function Header() {
+  return (
+    <header>
+      <h1>Aplikasi React EntFladda</h1>
+    </header>
+  );
+}
+
+function Main() {
+  return(
+    <main>
+      <h2>Selamat datang di Aplikasi React Saya!</h2>
+      <p>Ini adalah area konten utama</p>
+    </main>
+  );
+}
+
+function Footer() {
+  return(
+    <footer>
+      <p>&copy;2025 Aplikasi React EntFladda</p>
+    </footer>
+  );
+}
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return(
+    <div>
+      <Header/>
+      <Main/>
+      <Greeting name="EntFladda"/>
+      <Counter/>
+      <Footer/>
     </div>
   );
 }
