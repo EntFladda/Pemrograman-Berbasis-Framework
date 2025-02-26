@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import styles from './Weather.module.css';
 
 export default function Weather() {
   const [city, setCity] = useState('');
@@ -26,19 +27,20 @@ export default function Weather() {
   };
 
   return (
-    <div>
-      <h1>Weather App</h1>
+    <div className={styles.container}>
+      <h1 className={styles.title}>Weather App</h1>
       <input
         type="text"
         value={city}
         onChange={(e) => setCity(e.target.value)}
         placeholder="Enter city name"
+        className={styles.input}
       />
-      <button onClick={fetchWeather}>Get Weather</button>
+      <button onClick={fetchWeather} className={styles.button}>Get Weather</button>
 
-      {error && <p style={{ color: 'red' }}>{error}</p>}
+      {error && <p className={styles.error}>{error}</p>}
       {weather && (
-        <div>
+        <div className={styles.weatherInfo}>
           <h2>{weather.city.name}</h2>
           <p>Temperature: {weather.list[0].main.temp}°C</p>
           <p>Weather: {weather.list[0].weather[0].description}</p>
