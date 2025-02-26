@@ -1,3 +1,5 @@
+import styles from '../userDetail.module.css';
+
 export async function getStaticPaths() {
     const res = await fetch('https://jsonplaceholder.typicode.com/users');
     const users = await res.json();
@@ -22,11 +24,11 @@ export async function getStaticProps({ params }) {
 
 const UserDetail = ({ user }) => {
     return (
-        <div>
-            <h1>{user.name}</h1>
-            <p>Email: {user.email}</p>
-            <p>Phone: {user.phone}</p>
-            <p>Website: {user.website}</p>
+        <div className={styles.container}>
+            <h1 className={styles.title}>{user.name}</h1>
+            <p className={styles.detail}>Email: {user.email}</p>
+            <p className={styles.detail}>Phone: {user.phone}</p>
+            <p className={styles.detail}>Website: {user.website}</p>
         </div>
     );
 };
