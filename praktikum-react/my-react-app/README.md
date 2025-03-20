@@ -11,4 +11,4 @@ The page will reload when you make changes.\
 ![image alt](Asset/code%20Counter.js.png)
 ![image alt](Asset/code%20Greeting.js.png)
 ![image alt](Asset/code%20ToDoList.js.png)
-![image alt](Asset/Hasil.png)
+
